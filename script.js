@@ -1,4 +1,4 @@
-// Datos de productos
+
 const products = [
     { name: 'Manzana', category: 'frutas' },
     { name: 'Banana', category: 'frutas' },
@@ -12,7 +12,7 @@ const products = [
     { name: 'Brócoli', category: 'verduras' }
 ];
 
-// Función para mostrar productos
+
 function showProducts(products) {
     const productList = document.getElementById('productList');
     productList.innerHTML = '';
@@ -25,7 +25,7 @@ function showProducts(products) {
     });
 }
 
-// Función para filtrar productos
+
 function filterProducts() {
     const searchInput = document.getElementById('searchInput').value.toLowerCase();
     const categoryFilter = document.getElementById('categoryFilter').value.toLowerCase();
@@ -38,14 +38,14 @@ function filterProducts() {
     showProducts(filteredProducts);
 }
 
-// Mostrar todos los productos al cargar la página
+
 showProducts(products);
 
-// Event listeners para el filtro
+
 document.getElementById('searchInput').addEventListener('input', filterProducts);
 document.getElementById('categoryFilter').addEventListener('change', filterProducts);
 
-// Event listener para el formulario de contacto
+
 document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
