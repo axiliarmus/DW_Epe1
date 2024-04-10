@@ -38,12 +38,12 @@
         <div id="formData"></div>
     </div>
     <script>
-        // Función para volver atrás en la historia del navegador
+        
         function goBack() {
             window.history.back();
         }
 
-        // Event listener para el formulario de contacto
+        
         document.getElementById('contactForm').addEventListener('submit', function(event) {
             event.preventDefault();
 
@@ -52,12 +52,12 @@
             const address = document.getElementById('address').value;
             const commune = document.getElementById('commune').value;
 
-            const message = `Nombre: ${name}\nCorreo electrónico: ${email}\nDirección: ${address}\nComuna: ${commune}`;
+            const message = `Sus datos se guardaron correctamente \n Nombre: ${name}\nCorreo electrónico: ${email}\nDirección: ${address}\nComuna: ${commune}`;
 
-            // Mostrar los datos en un cuadro de diálogo de alerta
+           
             alert(message);
 
-            // Mostrar los datos en la página web
+            
             const dataContainer = document.getElementById('formData');
             dataContainer.innerText = message;
         });
